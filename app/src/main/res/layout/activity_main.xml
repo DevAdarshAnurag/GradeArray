@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/bt_read"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="128dp"
+        android:layout_marginTop="64dp"
+        android:text="Read" />
+
+    <EditText
+        android:id="@+id/et_filename"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="64dp"
+        android:layout_toStartOf="@id/bt_generate"
+        android:hint="Enter output filename" />
+
+    <Button
+        android:id="@+id/bt_generate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="64dp"
+        android:text="Generate" />
+
+    <TextView
+        android:id="@+id/tv_lehmer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bt_read"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="16dp"
+        android:text="Lehmer Mean: "
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_third"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tv_lehmer"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="16dp"
+        android:text="Third Highest Grade: "
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/tv_third"
+        android:id="@+id/tv_grdes_number"
+        android:text="Number of grades: "
+        android:layout_margin="16dp"
+        android:textSize="20sp"/>
+
+</RelativeLayout>
